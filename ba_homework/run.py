@@ -12,7 +12,7 @@ while True:
 
         1. Create Database
         2. Get Info
-        3. Get Monthly
+        3. Separate File By Days
         ==========================
         '''))
 
