@@ -12,6 +12,7 @@ while True:
 
         1. Create Database
         2. Get Info
+        3. Get Monthly
         ==========================
         '''))
 
@@ -22,5 +23,7 @@ while True:
             exec(open(os.path.join(CORE_FOLDER, 'create_db.py')).read())
         elif user_input == 2:
             exec(open(os.path.join(CORE_FOLDER, 'get_info.py')).read())
+        elif user_input == 3:
+            exec(open(os.path.join(CORE_FOLDER, 'get_monthly.py')).read())
     except ValueError:
         print('Wrong input value')
