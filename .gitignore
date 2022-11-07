@@ -290,6 +290,4 @@ order_app_dck/media/
 .envs/*
 !.envs/.local/
 __init__.py
-node_modules
-order_app_dck
-migrations
+ba_homework/core/main.py

@@ -1,12 +1,13 @@
-from homework.path_settings import *
+from path_settings import *
 
 
+# initialize inputs
 while True:
     try:
 
         user_input = int(input(
             f'''
-        ========================== 
+        ==========================
         0. Exit
 
         1. Create Database
@@ -18,7 +19,7 @@ while True:
             break
 
         elif user_input == 1:
-            exec(open(CREATE_DB).read())
+            exec(open(os.path.join(CORE_FOLDER, 'create_db.py')).read())
         elif user_input == 2:
             exec(open(os.path.join(CORE_FOLDER, 'get_info.py')).read())
     except ValueError:
